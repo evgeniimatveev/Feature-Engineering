@@ -73,7 +73,7 @@ jupyter notebook
 
 ## 📌 Authors & Acknowledgments  
 💡 **Developed by:** **Evgenii Matveev**  
-💡 **Source:**SuperDataScience  **⚙️
+💡 **Source:SuperDataScience ⚙️
 Introduction to Feature Engineering**  
 💡 **For educational purposes only**  
 
