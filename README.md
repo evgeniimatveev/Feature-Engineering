@@ -23,6 +23,7 @@ Feature-Engineering/
 ├── Part 2 - Feature Transformations/  # Scaling, encoding, feature generation
 ├── Part 3 - Feature Selection/        # Feature importance & interactions
 ├── data/                              # Datasets
+├── Bonus - Data Preprocessing Pipelines/  # Automated & Enhanced Pipelines
 ├── README.md                          # Documentation
 ```
 
