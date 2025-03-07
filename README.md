@@ -73,7 +73,8 @@ jupyter notebook
 
 ## 📌 Authors & Acknowledgments  
 💡 **Developed by:** **Evgenii Matveev**  
-💡 **Source:** **SuperDataScience & Machine Learning A-Z (Python)**  
+💡 **Source:** **⚙️
+Introduction to Feature Engineering**  
 💡 **For educational purposes only**  
 
 🔥 **Special thanks** to the authors of machine learning courses for their contributions to ML education! 🚀🙌  
