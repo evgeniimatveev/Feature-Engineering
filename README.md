@@ -1,7 +1,7 @@
 # 🚀🔥 Feature Engineering & Data Preprocessing 🔥  
 **Advanced Feature Engineering techniques implemented in Python using Jupyter Notebooks**  
 
-![Feature Engineering](https://img.shields.io/badge/Feature_Engineering-Python-blue) ![Data Preprocessing](https://img.shields.io/badge/Data_Preprocessing-Advanced-orange) ![Status](https://img.shields.io/badge/Status-Active-green) ![License](https://img.shields.io/badge/License-MIT-lightgrey)  
+![Feature Engineering](https://img.shields.io/badge/Feature_Engineering-Python-blue) ![Data Preprocessing](https://img.shields.io/badge/Data_Preprocessing-Advanced-orange) ![Status](https://img.shields.io/badge/Status-Active-green)  
 
 ---
 
