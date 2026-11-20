@@ -4,8 +4,6 @@ name: Notebook run (manual)
 # Executes every notebook end to end and writes a pass/fail table to the Job Summary.
 on:
   workflow_dispatch:
-  push:
-    branches: [restructure/single-main-numbered-sections]   # TEMPORARY: to test before merge
 
 permissions:
   contents: read
