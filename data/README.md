@@ -1,95 +1,27 @@
-# 🚀🔥 Feature Engineering & Data Preprocessing 🔥  
-**Advanced Feature Engineering techniques implemented in Python using Jupyter Notebooks**  
+# 📂 Datasets
 
-![Feature Engineering](https://img.shields.io/badge/Feature_Engineering-Python-blue) ![Data Preprocessing](https://img.shields.io/badge/Data_Preprocessing-Advanced-orange) ![Status](https://img.shields.io/badge/Status-Active-green) ![License](https://img.shields.io/badge/License-MIT-lightgrey)  
+| File | Rows × columns | Used by | Target |
+|---|:-:|---|---|
+| [`loan_applications.csv`](loan_applications.csv) | 50,000 × 17 | every notebook except pipeline v2 | `default` (28.8% of applications) |
+| [`Housing.csv`](Housing.csv) | 545 × 13 | `data-preprocessing-pipeline-v2` | `price` |
 
----
+## `loan_applications.csv`
 
-## 📌 Description  
-🚀 This repository provides **powerful feature engineering techniques** for **data preprocessing, transformation, and optimization** in **Machine Learning workflows**.  
+`application_id`, `application_date`, `age`, `gender`, `education`, `occupation`, `employment_length`, `income`, `loan_amount`, `loan_term`, `interest_rate`, `monthly_payment`, `credit_score`, `existing_loans`, `previous_defaults`, `city`, `default`
 
-### 🏆 Why this project?  
-👉 **Hands-on Learning** – Practical implementation of Feature Engineering techniques  
-👉 **Structured Approach** – Organized into key parts for easy navigation  
-👉 **Essential Preprocessing** – Covers missing values, scaling, encoding, feature selection, and more  
-👉 **Educational Purpose** – Designed to improve ML model performance  
+**Missing values** (this is what the cleaning notebooks work on):
 
----
+| Column | Missing | Share |
+|---|--:|--:|
+| `employment_length` | 7,160 | 14.3% |
+| `income` | 2,445 | 4.9% |
+| `credit_score` | 2,578 | 5.2% |
+| `existing_loans` | 2,513 | 5.0% |
 
-## 📂 Project Structure 💁  
-```bash
-Feature-Engineering/
-├── Part 1 - Data Cleaning/            # Handling missing values & outliers
-├── Part 2 - Feature Transformations/  # Scaling, encoding, feature generation
-├── Part 3 - Feature Selection/        # Feature importance & interactions
-├── data/                              # Datasets
-├── README.md                          # Documentation
-```
+## `Housing.csv`
+
+`price`, `area`, `bedrooms`, `bathrooms`, `stories`, `mainroad`, `guestroom`, `basement`, `hotwaterheating`, `airconditioning`, `parking`, `prefarea`, `furnishingstatus`. No missing values.
 
 ---
 
-## 📚 Content  
-### 🟢 **Part 1: Data Cleaning & Preprocessing**  
-✔ **Handling Missing Values** [`Handling Missing Values.ipynb`]  
-✔ **Outlier Detection (IQR Method)** [`Outlier Detection Using the IQR Method.ipynb`]  
-
-### 🔵 **Part 2: Feature Transformations & Encoding**  
-✔ **Feature Transformations (Log, Power, etc.)** [`Feature Transformations.ipynb`]  
-✔ **Different Scaling Techniques** [`Different Scaling Techniques.ipynb`]  
-✔ **Categorical Encoding Techniques** [`Categorical Encoding Techniques.ipynb`]  
-
-### 🔥 **Part 3: Advanced Feature Engineering**  
-✔ **Feature Interactions & Polynomial Features** [`Feature Interactions.ipynb`]  
-✔ **Advanced Feature Transformations** [`advanced feature transformation.ipynb`]  
-
-### 🎯 **Bonus: Data Preprocessing Pipelines**  
-✔ **Automated Data Processing Pipeline (v1)** [`data_preprocessing_pipeline.ipynb`]  
-✔ **Enhanced Data Processing Pipeline (v2)** [`data_preprocessing_pipeline_v2.ipynb`]  
-
----
-
-## 🚀 How to Use?  
-### 🔧 Installation  
-Ensure you have the required libraries installed before running the notebooks:  
-```python
-!pip install numpy pandas matplotlib seaborn scikit-learn
-```
-
-### ▶ Running the Scripts  
-1️⃣ **Clone the repository**:  
-```bash
-git clone https://github.com/evgeniimatveev/Feature-Engineering.git
-cd Feature-Engineering
-```
-
-2️⃣ **Run the Jupyter Notebooks**:  
-```bash
-jupyter notebook
-```
-
-3️⃣ **Open the required notebook and explore!**  
-
----
-
-## 📌 Authors & Acknowledgments  
-💡 **Developed by:** **Evgenii Matveev**  
-💡 **Source:** **SuperDataScience & Machine Learning A-Z (Python)**  
-💡 **For educational purposes only**  
-
-🔥 **Special thanks** to the authors of machine learning courses for their contributions to ML education! 🚀🙌  
-
----
-
-## 🐝 License  
-This project is distributed under the **MIT License**. Feel free to use the code! 🚀  
-
----
-
-## 📢 Stay Connected!  
-💻 **GitHub Repository:** [Feature-Engineering](https://github.com/evgeniimatveev/Feature-Engineering)  
-🌐 **Portfolio:** [Data Science Portfolio](https://www.datascienceportfol.io/evgeniimatveevusa)  
-📌 **LinkedIn:** [Evgenii Matveev](https://www.linkedin.com/in/evgenii-matveev-510926276/)  
-
----
-
-🔥 **If you like this project, don't forget to star ⭐ the repository!** 🔥  
+*Built by [Evgenii Matveev](https://github.com/evgeniimatveev) · Data Analyst / Analytics & MLOps Engineer*

@@ -1,0 +1,10 @@
+# Everything the notebooks import (standard-library modules excluded)
+jupyterlab
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scipy
+statsmodels
+missingno      # lecture-03: visualizing missing values
