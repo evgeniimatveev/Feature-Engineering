@@ -1,0 +1,30 @@
+name: Notebook check
+
+# Static checks only: validates the notebooks, it does not execute them (see notebooks-run.yml for that).
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Validate every notebook (nbformat) + file-name hygiene
+        run: uv run --no-project --with nbformat python .github/scripts/check_notebooks.py
+
+      - name: Quickstart script runs
+        run: uv run --no-project --with pandas --with scikit-learn python 00-quickstart/hello_feature_engineering.py
+
+      - name: Datasets are present
+        run: |
+          test -s data/loan_applications.csv
+          test -s data/Housing.csv

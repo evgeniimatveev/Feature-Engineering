@@ -1,0 +1,26 @@
+name: Notebook run (manual)
+
+# Manual only: click "Run workflow" in the Actions tab. No push / PR / schedule triggers.
+# Executes every notebook end to end and writes a pass/fail table to the Job Summary.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Execute every notebook
+        run: >
+          uv run --no-project --python 3.12
+          --with ipykernel --with nbclient --with nbformat
+          --with pandas --with numpy --with matplotlib --with seaborn
+          --with scikit-learn --with scipy --with statsmodels --with missingno
+          python .github/scripts/run_notebooks.py

@@ -8,10 +8,16 @@ Tiny demo of a feature engineering workflow:
 - scale numeric features
 """
 
+import sys
+
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
+
+# Make sure Windows consoles (cp1252) can print the emoji below.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 # 1. Create a tiny demo dataset
 data = {
